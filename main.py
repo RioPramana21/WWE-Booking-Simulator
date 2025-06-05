@@ -1,3 +1,19 @@
+from classes import *
+
+def view_superstars():
+    print("Viewing all superstars...")
+    example = Superstar("John Cena", 98)
+    print(example)
+
+def hire_superstar():
+    print("Hiring a new superstar...")
+    
+def fire_superstar():
+    print("Firing a superstar...")
+
+def book_match():
+    print("Booking a match...")
+
 def main():
     print("Welcome to WWE Booking Simulator!")
     menu = 0
@@ -15,13 +31,13 @@ def main():
             continue
         match(menu):
             case 1:
-                print("Viewing Superstars...")
+                view_superstars()
             case 2:
-                print("Hiring Superstar...")
+                hire_superstar()
             case 3:
-                print("Firing Superstar...")
+                fire_superstar()
             case 4:
-                print("Booking a Match...")
+                book_match()
             case 5:
                 print("Exiting the simulator. Goodbye!")
             case _:
